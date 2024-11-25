@@ -1,0 +1,206 @@
+<html>
+
+<head>
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #0d1b2a;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #fca311;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #e0fbfc;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        a {
+            color: #98c1d9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #fca311;
+        }
+
+        /* About Section */
+        .Iam {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 1200px;
+            background-color: #1e3a5f;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .am {
+            flex: 1;
+            padding: 20px;
+            color: #e0fbfc;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        /* Image Styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button Styling */
+        .btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn button {
+            padding: 15px 40px;
+            font-size: 20px;
+            color: #0d1b2a;
+            background-color: #fca311;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn button:hover {
+            background-color: #e63946;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+        .btn button::before {
+            content: 'Hello, I am Kirti';
+            position: absolute;
+            left: -100%;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 16px;
+            transition: all 0.5s;
+            z-index: 1;
+        }
+
+        .btn button:hover::before {
+            left: 20%;
+        }
+
+        /* Additional Styling for Paragraphs */
+        .p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #e0fbfc;
+        }
+
+        /* Flex Container for More Points */
+        .para {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 1200px;
+            background-color: #1e3a5f;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Title -->
+    <h1>About Me</h1>
+
+    <!-- About Section -->
+    <div class="Iam">
+        <div class="am">
+            <h2>I am a Full Stack Java Developer from Jaipur, Rajasthan.</h2>
+            <p>
+                Apart from my passion for coding, I have a deep love for personal growth and creativity. 
+                I enjoy reading impactful books like 
+                <a href="https://www.amazon.in/Power-your-Subconscious-Mind/dp/8192910962" target="_blank">*The Power of Your Subconscious Mind*</a> 
+                and 
+                <a href="https://www.amazon.in/Srimad-Bhagavad-Gita-HINDI-2018-Bhaktivedanta/dp/B08LCBTX3W" target="_blank">*The Bhagavad Gita*</a>. 
+                As a devotee of Lord Krishna, I find strength and inspiration in his teachings.
+            </p>
+            <p>
+                In my free time, I engage in activities that inspire creativity and balance:
+            </p>
+            <ul>
+                <li>Playing outdoor games like <a href="#">badminton</a></li>
+                <li>Exploring my creativity by cooking vegetarian dishes</li>
+                <li>Listening to music, dancing, and unwinding</li>
+                <li>Spending time with nature and traveling</li>
+                <li>Learning new technologies to stay updated</li>
+                <li>Spending quality time with family and loved ones</li>
+            </ul>
+        </div>
+        <div>
+            <img src="g3.png" alt="Profile Image">
+        </div>
+    </div>
+
+    <!-- More Points Section -->
+    <h2>Some More Points About Me</h2>
+    <div class="para">
+        <div>
+            <img src="g1.png" alt="Achievement Image">
+        </div>
+        <div class="p">
+            <p>
+                I’m proud to share my journey of clearing several government exam preliminaries, including 
+                <a href="https://ssc.nic.in/" target="_blank">SSC CGL</a> and <a href="#" target="_blank">Railway NTPC</a>, 
+                and successfully appearing for mains exams multiple times. 
+                I also cleared the prestigious <a href="https://www.vedantu.com/full-form/afcat-full-form#:~:text=AFCAT%20is%20a%20section%20for,Technical%20and%20Non%2DTechnical%20occupations." target="_blank">AFCAT Exam</a>.
+            </p>
+            <p>
+                Although I narrowly missed achieving a government position, these experiences shaped my determination and skills, 
+                which I carry into my professional life.
+            </p>
+            <p>
+                I am excited to share my journey and connect with like-minded individuals through this platform.
+            </p>
+            <div class="btn">
+                <button>Thank You!</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
