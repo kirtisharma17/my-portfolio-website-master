@@ -3,37 +3,191 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Kirti - Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirti - Full Stack Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@100&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
 
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: #eaeaea;
+        }
+
+        header {
+            background-color: #16213e;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .left {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        nav .right ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .right ul li a {
+            color: #eaeaea;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        nav .right ul li a:hover {
+            color: #ff2e63;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-between;
+            padding: 100px 20px;
+        }
+
+        .leftSection {
+            width: 50%;
+        }
+
+        .purple {
+            color: #ff2e63;
+        }
+
+        .rightSection img {
+            width: 300px;
+            border-radius: 50%;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #ff2e63;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .btn:hover {
+            background-color: #9c27b0;
+        }
+
+        .secondSection {
+            padding: 50px 20px;
+        }
+
+        .secondSection h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .vertical {
+            background-color: #1b1b3a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 20%;
+            text-align: center;
+        }
+
+        .vertical img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .vertical-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .vertical-desc {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #16213e;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: #eaeaea;
+            margin-top: 20px;
+        }
+
+        /* Moving text animation */
+        #element {
+            color: #ff2e63;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- Header and Navigation -->
     <header>
         <nav>
-            <div class="left"> Kirti's Portfolio</div>
+            <div class="left">Kirti's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li> <a href="About.html">About</a></li>
-                    <li> <a href="">Services</a></li>
-                    <li> <a href="project.html">Projects</a></li>
-                    <li> <a href="https://www.linkedin.com/in/kirtisharma17">Contact me</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="https://www.linkedin.com/in/kirtisharma17">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
+    <!-- Main Content -->
     <main>
         <section class="firstSection">
             <div class="leftSection">
                 Hi, My name is <span class="purple">Kirti</span>
                 <div>and I am a passionate</div>
-                <!-- <div> Java Developer</div> -->
                 <span id="element"></span>
                 <div class="buttons">
                     <button class="btn"><a href="kirtiResume.docx">Download Resume</a></button>
@@ -41,74 +195,66 @@
                 </div>
             </div>
             <div class="rightSection">
-                <img src="bg.png" alt="">
+                <img src="bg.png" alt="Kirti">
             </div>
         </section>
+
         <hr>
+
         <section class="secondSection">
-            <span class="text-gray"> What I have done so far</span>
-            <h1>past Experience</h1>
+            <span class="text-gray">What I have done so far</span>
+            <h1>Past Experience</h1>
             <div class="box">
                 <div class="vertical">
-                    <img class="image-top" src="sc2.png" alt=" ">
+                    <img class="image-top" src="sc2.png" alt="School">
                     <div class="vertical-title">
                         MY SCHOOLING
                     </div>
                     <div class="vertical-desc">
-                        In 10th class I have 89% .
-                        In 12th class I have 81% .
+                        10th Class: 89% <br> 12th Class: 81%
                     </div>
-
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="school.png" alt=" ">
+                    <img class="image-top" src="school.png" alt="College">
                     <div class="vertical-title">
-                        MY COLLAGE
+                        MY COLLEGE
                     </div>
                     <div class="vertical-desc">
-                        I have completed B.Tech. from Rajasthan Techanical University Kota with honours Degree and
-                        scored 78%.
+                        B.Tech from Rajasthan Technical University Kota, 78%
                     </div>
-
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="school.png" alt=" ">
+                    <img class="image-top" src="school.png" alt="Journey After College">
                     <div class="vertical-title">
-                        JOURNEY AFTER MY COLLAGE
+                        JOURNEY AFTER COLLEGE
                     </div>
                     <div class="vertical-desc">
-                        I have cleared ssc cgl pre and gives mains exam and also clear AFCAT exam and
-                        attempt SSB interview. I have cleared four phase Railway NTPC pre exam and attempts mains.
+                        Cleared SSC CGL Pre, AFCAT, Railway NTPC Pre.
                     </div>
-
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="java.png" alt=" ">
+                    <img class="image-top" src="java.png" alt="Full Stack Developer">
                     <div class="vertical-title">
-                        FULL STACK Java DEVELOPER(2022-2023)
+                        FULL STACK JAVA DEVELOPER (2022-2023)
                     </div>
                     <div class="vertical-desc">
-                        I have completed my internship in Full Stack Java Developer. Here I learned various
-                        skills as like Core Java, DSA, Spring Boot, JDBC, MYSQL, HTML,CSS, Java Script, React and Team
-                        leadership.
-
+                        Learned Core Java, DSA, Spring Boot, MySQL, React, Team Leadership.
                     </div>
-
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="developer.png" style="border:1px solid white" alt=" ">
+                    <img class="image-top" src="developer.png" alt="Web Developer">
                     <div class="vertical-title">
                         WEB DEVELOPER
                     </div>
                     <div class="vertical-desc">
-                        I have interest in web developer so I learn it myself and work on it.
+                        Self-learned and worked on various web development projects.
                     </div>
-
                 </div>
             </div>
-
         </section>
     </main>
+
+    <!-- Footer -->
     <footer>
         <div class="footer">
             <div class="footer-first">
@@ -138,21 +284,22 @@
                     <li>Contact</li>
                 </ul>
             </div>
-
         </div>
         <div class="footer-rights">
             Copyright &#169; www.kirtiportfolio.com | All rights reserved
         </div>
     </footer>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Java Developer', 'Web Developer', 'Good Command on DSA', 'Full Stack Developer'],
-            typeSpeed: 50,
-        });
-    </script>
-</body>
-
-</html>
+   <!-- JS for Text Animation -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Full Stack Java Developer', 'Good Command on DSA', 'Experienced in Microservices', 'Passionate About Coding'],
+        typeSpeed: 50, // Speed of typing
+        backSpeed: 30, // Speed of erasing
+        backDelay: 1000, // Time before erasing starts
+        startDelay: 500, // Time before typing starts
+        loop: true, // Loop the typing animation
+        showCursor: true, // Display the blinking cursor
+    });
+</script>
